@@ -1,9 +1,68 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Montserrat', sans-serif;
 }
+
+header{
+  
+  background-color: #FFC107;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+}
+
+nav {
+
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  z-index:100;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.teste{
+  border: 5px solid red;
+}
+
+/*
+
 
 section{
     
@@ -11,13 +70,6 @@ section{
 }
 
 
-header{
-    
-    background-color: #FFC107;
-    width: 100%;
-    text-align: center;
-    z-index: 100;
-}
 
 footer{
     background-color: #FFC107;
@@ -26,50 +78,6 @@ footer{
     color: #000000;
     height: 5%;
     font-weight: 100;
-}
-
-#videoDiv {
-    width: 100%;
-    height: 90%;
-    position: relative;
-    z-index: 99;
-}
-
-#videoBlock {
-    width: 100%;
-    height: 85%;
-    display: block;
-    overflow: hidden;
-    top: 100px;
-    bottom: 50px;
-}
-
-#videoMessage {
-    width: 70%;
-    height:28%;
-    position: absolute;
-    top: 180px;
-    background-color: #000000;
-    opacity: 0.7;
-    filter: alpha(opacity=70); /* For IE8 and earlier */
-    border: 0;
-}
-
-#videoBlock #videoMessage{width: 100%;}
-
-.spacer {width: 30%;margin-left: 600px;}
-
-
-#videoMessage .btn-1{opacity: none;filter: none;margin-left: 730px;}
-
-
-.btn-1 {
-  background-color: #FFFFFF;
-    
-    
-}
-.btn-1 .round {
-  background-color: #000000;
 }
 
 
@@ -144,71 +152,11 @@ a .round i {
     color: #ffffff;
 }
 
-/*
-#videoMessage *{
-    padding:0.4em;
-    margin:0}
-*/
 
-#videoMessage {
-    text-shadow: 2px 2px 2px #000000;
-    color:white;
-    z-index:99;
-}
-
-#videoMessage h1{
-    font-size: 2em;
-    color:#ffffff;
-    text-align:center;
-}
-
-#videoMessage h2{
-    font-size: 1.5em;
-    color:#ffffff;
-    text-align:center;
-}
-
-#videoMessage h3{
-    font-size: 1.2em;
-    color:#ffffff;text-align:center;
-}
-
-.videoClick {
-    text-align:center
-}
-
-.videoClick a{
-    color:white;
-    background-color:rgba(241, 241, 241, 0.25);
-    font-size: 1.7em;
-    cursor:pointer;
-    cursor:hand
-}
-
-#video{
-  min-width: 100%;
-  height: 50%
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  position: relative;
-  padding: 0;
-}
-
-/*
-span {
-    display: inline-block;
-    float: left; 
-}
-*/
 body{
     
     padding: 0;
     margin: 0;
-}
-
-nav {
-
-    border-bottom: 2px solid #FFFFFF;
 }
 
 .menu-ul {
@@ -410,44 +358,8 @@ nav {
     display:inline-block;
 }
 
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-  z-index:100;
-}
 
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
 
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
 
 
 .col-cards{
@@ -563,6 +475,13 @@ nav {
   text-transform: uppercase;
 }
 
+#videoBlock{
+  width: 100%;
+  border: 20px blue;
+}
+
+
+
 .topnav a {
   float: center;
   color: #ffffff;
@@ -603,16 +522,17 @@ nav {
   display: none;
 }
 
+
 @media screen and (max-width: 600px) {
   .topnav a {display: none;}
+  
   #menu-label {display: block;}
+  
   .topnav a.icon {
     float: right;
     display: block;
   }
-}
 
-@media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -679,3 +599,4 @@ nav {
   font-size: 16px;
 /*  padding: 16px 32px;*/
 }
+ */
