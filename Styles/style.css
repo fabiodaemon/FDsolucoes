@@ -7,16 +7,6 @@
   
 }
 
-#logo-menu{
-
-  width: 0%;
-  height: 0%;
-  padding: 0;
-  margin: 0;
-  display: none;
-
-}
-
 header{
   
   background-color: #FFC107;
@@ -32,8 +22,15 @@ header{
   height: 15%;
 }
 
+.txt-mobile{
+  display: none;
+}
+
+
 nav{
-  background-color:#000000;
+
+  background-color: rgb(230, 172, 0);
+
 }
 
 .container #logo{
@@ -246,17 +243,17 @@ nav{
 
 footer{
   background-color: #FFC107;
-  width: 100%;
+  max-width: 100%;
   text-align: center;
-  color: #000000;
+  color: #ffffff;
   height: 5%;
-  font-weight: 100;
 }
 
 
 .topnav {
-  background-color: #000000;
+
   text-transform: uppercase;
+  font-weight: bolder;  
 }
 
 .topnav a {
@@ -265,6 +262,7 @@ footer{
   padding: 14px 16px;
   font-size: 17px;
   font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;  
 }
 
 .topnav a:hover {
@@ -283,7 +281,6 @@ footer{
   display: block;
   margin-right: auto;
   margin-left: auto;
-  border: 2px solid red;
   width: 80%;
 }
 
@@ -310,9 +307,13 @@ footer{
   display: none;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
 
+  #logo-link{
 
+    display: block;
+  
+  }
 
 .videoBlock{
   height: 20%;
@@ -342,17 +343,9 @@ footer{
     text-align: left;
   }
 
-  #logo-menu{
-
-    display: block;
-    width:  40%;
-    height: 10%;
-
-  }
 
   .prof-small{
-    width: 40%;
-    /* width:200px; */
+    max-width: 40%;
     height:340px;
     margin-left: 0;
     margin-bottom: 0;
@@ -363,13 +356,13 @@ footer{
   }
 
   .prof-descricao{
-    width: 55%;
     display:inline-block;
     margin-top: 0;
     margin-right: 0;
     float: left;
-    padding: 15px;
+    padding: 5px;
     text-align: justify;
+    max-width: 55%;
   }
 
   #perfil{
@@ -378,7 +371,6 @@ footer{
 
   .banner2{
 
-    height: 100%;
     width: 100%;
 
   }
@@ -395,6 +387,18 @@ footer{
 
   .flip-card{
     margin-bottom: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  footer{
+    height: 8%;
+  }
+
+  .txt-mobile{
+    display: block;
   }
 
 }
